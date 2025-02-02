@@ -1,0 +1,31 @@
+# seperate yamp forl efor flutter native splash screen
+# flutter_native_splash: ^1.2.0
+
+# to generate and splash screen after config, run this: 'dart run flutter_native_splash:create --path=native_splash.yaml'
+
+flutter_native_splash:
+  #   this section is used to specify platorm we will like to support
+  #   if you leave this blank, it will default to all platforms
+  android: true
+  ios: true
+  web: false
+
+  # color: "#E70000"
+  background_image: assets/images/background_image1.jpeg
+  image: assets/images/non_licence_logo.png
+  branding: "assets/images/non_licence_logo.png"
+
+  # splash for dark mode
+  background_image_dark: assets/images/background_image1.jpeg
+  image_dark: assets/images/non_licence_logo.png
+  branding_dark: "assets/images/non_licence_logo.png"
+
+  android_12: # this config works for only android 12+
+    # color: "#E70000"
+    # background_image: assets/images/background_image1.jpeg  # background_image: does not work for andround 12+
+    image: assets/images/non_licence_logo.png
+    # branding: LoanHive
+    image_dark: assets/images/non_licence_logo.png
+
+    branding: "assets/images/non_licence_logo.png"
+    branding_dark: "assets/images/non_licence_logo.png"
