@@ -10,6 +10,22 @@ class Checker {
   final regName = RegExp(r'^[a-zA-Z0-9_]+$');
   final regNum = RegExp(r'^[0-9]+$');
   final regEmail = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+  final regPassword = RegExp(r'/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/');
+
+
+  // passWord checker
+  dynamic _passwordCheckerHelper(String? password) {
+    if (password == null) return null;
+    if (!regPassword.hasMatch(password)) {
+      const List<String> passwordError = [
+        'Password must have minimum 8 characters',
+        'Password must have least One UpperCase needed',
+        'Password must contain one lowercase',
+        'Password must contain a special character'
+      ];
+      return passwordError;
+    }
+  }
 
 // checkers
   String? checkName(String? name) {
@@ -26,6 +42,10 @@ class Checker {
     if (email.isEmpty) return 'Please enter Email.';
     return null;
   }
+
+  dynamic checkPassword(String? password) { _passwordCheckerHelper(password);}
+  dynamic checkConfirmPassword(String? confirmPassword) { _passwordCheckerHelper(confirmPassword);}
+
 
   IntValidator? checkNumber(String? num) {
     if (num == null) return IntValidator(null, 'Please enter a valid Number.');

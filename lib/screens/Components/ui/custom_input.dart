@@ -46,7 +46,7 @@ class _CustomInputState extends State<CustomInput> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             border: Border.all(
-              color: const Color.fromARGB(255, 34, 33, 33),
+              color: const Color.fromARGB(225, 46, 45, 45),
               width: 2.0,
               style: BorderStyle.solid,
             ),
