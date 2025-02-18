@@ -38,6 +38,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         'password_confirmation': _confirmPasswordContoller.text
       };
 
+      // TODO: finish up this when the server is up and running !!!!
       try {
         final dynamic registerResponse = await Auth.registerAuth(payload);
         if (registerResponse.data.staus == 200 ) {
