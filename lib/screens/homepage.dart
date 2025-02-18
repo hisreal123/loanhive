@@ -28,13 +28,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void initialization() async {
     // This is where you can initialize the state of the widget
-    print('ready in 3');
-    await Future.delayed(const Duration(seconds: 1));
-    print('ready in 2');
-    await Future.delayed(const Duration(seconds: 1));
-    print('ready in 1');
-    await Future.delayed(const Duration(seconds: 1));
-    print('ready go');
+    // print('ready in 3');
+    // await Future.delayed(const Duration(seconds: 1));
+    // print('ready in 2');
+    // await Future.delayed(const Duration(seconds: 1));
+    // print('ready in 1');
+    // await Future.delayed(const Duration(seconds: 1));
+    // print('ready go');
     FlutterNativeSplash.remove();
   }
 
