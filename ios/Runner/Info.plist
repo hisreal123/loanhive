@@ -34,6 +34,10 @@
 			<string>UIInterfaceOrientationLandscapeLeft</string>
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
+		<!-- <key>keychain-access-groups</key>
+		<array>
+			<string>$(AppIdentifierPrefix)com.yourcompany.yourapp</string>
+		</array> -->
 		<key>UISupportedInterfaceOrientations~ipad</key>
 		<array>
 			<string>UIInterfaceOrientationPortrait</string>
